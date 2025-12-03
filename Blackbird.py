@@ -5,12 +5,12 @@ import time
 import threading
 import requests
 from urllib.parse import urljoin, urlparse
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup # pyright: ignore[reportMissingImports]
 
-from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6 import QtCore, QtWidgets, QtGui # pyright: ignore[reportMissingImports]
 
 # default logo path (if you uploaded an image to the environment)
-DEFAULT_LOGO = "./BLACKBIRD.png"
+DEFAULT_LOGO = "./img/BLACKBIRD.png"
 
 # -----------------------------
 # Worker threads
@@ -192,7 +192,7 @@ class SubdomainScannerWorker(QtCore.QThread):
 class BlackbirdSinglePageGUI(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Blackbird Lite")
+        self.setWindowTitle("Blackbird")
         self.resize(1000, 700)
 
         central = QtWidgets.QWidget()
@@ -209,7 +209,7 @@ class BlackbirdSinglePageGUI(QtWidgets.QMainWindow):
             logo.setPixmap(pix)
             banner_layout.addWidget(logo)
 
-        title = QtWidgets.QLabel("Blackbird Lite")
+        title = QtWidgets.QLabel("Blackbird")
         title.setStyleSheet("font-size:18px; font-weight:700; padding:8px;")
         banner_layout.addWidget(title)
         banner_layout.addStretch()

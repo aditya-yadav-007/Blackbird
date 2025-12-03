@@ -1,7 +1,5 @@
 # Blackbird – Reconnaissance Tool
 
-![Blackbird Logo](./BLACKBIRD.png)
-
 Blackbird is a powerful, modular reconnaissance tool inspired by the stealth and precision of the legendary SR‑71 Blackbird. Designed for ethical cybersecurity research, it provides a streamlined interface for gathering information passively and actively across networks, services, and endpoints.
 
 ---
@@ -17,6 +15,8 @@ Blackbird is a powerful, modular reconnaissance tool inspired by the stealth and
 * **Stealth Modes** – Configurable request timing and packet profile.
 
 ---
+
+![Sample](./img/smp.png)
 
 ---
  # WORK IN PROGRESS
